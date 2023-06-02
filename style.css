@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700&family=Libre+Franklin:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --negro: rgb(29, 36, 45);
+    --grisInput: rgb(249, 251, 252);
+    --grisFooter: rgb(234, 238, 242);
+    --grisIcon: rgb(242, 243, 247);
+    --grisPlace: rgb(161, 168, 175);
+    --grisOscuro: rgb(66, 75, 86);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--negro);
+    font-weight: 500;
+    /* font-family: 'Heebo', sans-serif; */
+    /* font-family: 'Libre Franklin', sans-serif; */
+}
+
+/* ---------------------------------------- */
+
+.signUp{
+    display: flex;
+    background-color: var(--negro);
+    padding: 0.8rem 18vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUp *{
+   color: white;
+   font-size: 0.8rem;
+}
+
+.signUp span{
+    font-weight: 600;
+}
+
+.signUp a{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.signUp i{
+    cursor: pointer;
+}
+.signUp p{
+    margin-bottom: 0rem;
+}
+
+/* ---------------HEADER Y NAVBAR------------------------- */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 18vw;
+}
+
+.header nav{
+    display: flex;
+    gap: 35px;
+    color: var(--negro);
+}
+.header a:hover{
+    color: var(--negro);
+}
+.header a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.header h2{
+    margin-bottom: 0rem;
+    font-size: 1.6rem;
+}
+
+.navDer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divInput{
+    background-color: var(--grisInput);
+    border: var(--grisIcon) 2px solid;
+    border-radius: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.inputSearch{
+    background-color: var(--grisInput);
+    color: var(--grisPlace);
+    border: 0;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.inputSearch::placeholder{
+    color: var(--grisPlace);
+}
+
+.iconSearch{
+    color: var(--grisPlace);
+}
+
+.navDer > i{
+    color: var(--negro);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------HERO------------------------ */
+
+
+
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------FOOTER----------------------- */
+
+footer{
+    margin-top: 80px;
+    background-color: var(--grisFooter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divFooter{
+    width: 65%;
+    display: flex;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--grisPlace);
+}
+
+.nostraFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+.nostraFooter p{
+    color: var(--grisPlace);
+    max-width: 70%;
+    line-height: 1.5rem;
+}
+
+.nostraFooter h2{
+    color: var(--grisOscuro);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.footerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    width: 15%;
+}
+
+.footerCard h3{
+    color: var(--grisOscuro);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footerCard a{
+    text-decoration: none;
+    color: var(--grisPlace);
+}
+
+.cardPagos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 15%;
+}
+
+.cardPagos h3{
+    color: var(--grisOscuro);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: end;
+}
+
+.divPagos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divPagos img{
+    width: 45px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.copyright{
+    color: var(--grisPlace);
+    padding: 2rem 0;
+}
+
+/* ---------------------------------------- */
