@@ -140,12 +140,40 @@ html{
 .small-img-group{
     display: flex;
     justify-content: space-between;
+    
 
 }
 .small-img-col{
     flex-basis: 24%;
     cursor: pointer;
 }
+.small-img{
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1px;
+    max-height: 87%;
+}
+
+
+#MainImg{
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1px;
+    max-height: 55%;
+    
+}
+#rating{
+    display: flex;
+    
+    
+}
+#rating p{
+    margin-left: 5px;
+}
+.checked{
+    color: gold;
+    margin-right: 4px;
+}
 
 
 
@@ -164,10 +192,79 @@ html{
 
 
 
+/*--------------Productos relacionados------------*/
+.productosRelacionados{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
+.titleProducts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
 
+.titleProducts h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
 
+.divProducts{
+    display: flex;
+    
+    gap: 25px;
+    max-width: fit-content;
+}
 
+.cardProduct{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cardProduct h3{
+    font-size: 1.4rem;
+}
+
+.cardProduct img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.cardFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardFooter div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardFooter i{
+    color: white;
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    background-color: var(--negro);
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--negro);
+}
 
 
 
@@ -263,3 +360,33 @@ footer{
 }
 
 /* ---------------------------------------- */
+
+
+/* -----------------MEDIA QUERYS----------------------- */
+@media screen and (max-width: 1200px){
+    .header{
+        padding: 2.5rem 10vw;
+    }
+    .signUp{
+        padding: 0.8rem 10vw;
+    }
+    .divFooter{
+        width: 80%;
+    }
+    .nostraFooter{
+        width: 50%;
+    }
+    .footerCard{
+        width: 35%;
+        
+    }
+    .cardPagos{
+        width: 20%;
+    }
+}
+
+@media(max-width: 1024px){
+    .container{
+        max-height: 80%;
+    }
+}
