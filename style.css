@@ -223,21 +223,27 @@ html{
     border: 1.4px solid rgb(227, 230, 234);
     border-radius: 8px;
     margin-right: 1.5rem;
+    
+    
   }
   
   .counter-value {
     flex-grow: 1;
     text-align: center;
-    font-weight: bold;
+    font-weight: lighter;
+    font-size: 1.5rem;
+
   }
   
   .counter button {
-    width: 40px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
+    width: 45px; /* Adjust the width as needed */
+    height: 45px; /* Adjust the height as needed */
     border: none;
     background-color: white;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.7rem;
+    font-weight: lighter;
   }
   
   .minus-btn {
@@ -272,7 +278,11 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5rem;
     
+}
+.losDetalles p{
+    color: var(--grisOscuro);
 }
 .tituloDetalles{
     display: flex;
@@ -548,5 +558,8 @@ footer{
 @media(max-width: 1024px){
     #contenedorFotos{
         height: 80%;
+    }
+    .ubicacion{
+        font-size: 0.9rem;
     }
 }
