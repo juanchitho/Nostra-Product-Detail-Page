@@ -135,7 +135,20 @@ html{
 /* ----------------HERO------------------------ */
 
 
+.ubicacion{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--grisPlace);
+}
 
+.ubicacion i{
+    color: var(--grisPlace);
+}
+
+.weight{
+    font-weight: 600;
+    font-size: 2.6rem;
+}
 
 .small-img-group{
     display: flex;
@@ -169,6 +182,7 @@ html{
 }
 #rating p{
     margin-left: 5px;
+    color: var(--grisOscuro);
 }
 .checked{
     color: gold;
@@ -176,17 +190,54 @@ html{
 }
 
 
+.line {
+    border-bottom: 1.4px solid black; /* Adjust the color, width, and style as desired */
+    opacity: 0.1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+
+.size h4{
+    font-size: 1.19rem;
+    color: var(--grisOscuro);
+}
+
+
+
+.addToCart span{
+    color: var(--grisOscuro);
+}
+
+
+
+.buy-btn{
+    font-weight: 400;
+    background-color: var(--negro);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: 0;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    height: 4rem;
+}
 
 
 
 
+/*---------------Los detalles---------------------*/
 
-
-
-
-
-
-
+.losDetalles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lineaDetalles{
+    height: 1px; /* Adjust the height of the line as desired */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  }
+  
 
 
 
@@ -233,7 +284,7 @@ html{
 .cardProduct img{
     width: 100%;
     border-radius: 10px;
-    height: 100%;
+    max-height: 70%;
     object-fit: cover;
     object-position: left;
 }
@@ -252,11 +303,13 @@ html{
 
 .cardFooter i{
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0.8rem 1rem;
     background-color: var(--negro);
     border-radius: 10px;
     cursor: pointer;
+    width: 3.8rem;
+    
     
 }
 
