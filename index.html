@@ -40,7 +40,7 @@
     <main>
     
        
-        <section class="container Product my-5 pt-5">
+        <section class="container Product my-2 pt-5">
             <div class="ubicacion col-lg-4 col-md-12 col-12">Browse product <i class="bi bi-chevron-right"></i> Women <i class="bi bi-chevron-right"></i><span>Jackets</span> </div>
             <div class="row mt-5">
                 <div class="col-lg-6 col-md-12 col-12" id="contenedorFotos">
@@ -81,8 +81,14 @@
                     <div class="line"></div>
                     <div class="addToCart">
                         <h5>Last 1 left <span>- make it yours!</span></h5>
-                        
-                        <button class="buy-btn">Add To Cart</button>
+                        <div class="d-flex">
+                            <div class="counter">
+                                <button class="minus-btn">-</button>
+                                <div class="counter-value">1</div>
+                                <button class="plus-btn">+</button>
+                            </div> 
+                            <button class="buy-btn">Add To Cart</button>
+                        </div>
                     </div>
 
                 </div>
@@ -92,10 +98,12 @@
     
     
     
-        <section class="losDetalles my-5 pt-5">
+        <section class="losDetalles">
             <div class="col-lg-8 col-md-11 col-11">
-                <h4>Los Detalles</h4>
-                <div class="line" id="lineaDetalles"></div>
+                <h4 class="tituloDetalles">Los Detalles</h4>
+                <div class="line2" id="lineaDetalles"></div>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex saepe atque odit quo quaerat? Adipisci architecto ab tenetur quos, voluptatibus possimus, error nisi unde quam culpa similique a odio Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates modi libero explicabo corrupti nulla architecto debitis eum laborum ad consectetur rerum assumenda similique tempora facere, neque dolore necessitatibus possimus!</p>
+                
             </div>
         </section>
     
@@ -222,5 +230,22 @@
         }
         
     </script>
+    <script>
+        $(document).ready(function() {
+          var counterValue = 1;
+      
+          $('.minus-btn').click(function() {
+            if (counterValue > 1) {
+              counterValue--;
+              $('.counter-value').text(counterValue);
+            }
+          });
+      
+          $('.plus-btn').click(function() {
+            counterValue++;
+            $('.counter-value').text(counterValue);
+          });
+        });
+      </script>
 </body>
 </html></div>

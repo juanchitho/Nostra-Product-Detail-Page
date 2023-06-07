@@ -166,7 +166,11 @@ html{
     perspective: 1px;
     max-height: 87%;
 }
-
+/*
+#contenedorFotos{
+    height: 95%;
+}
+*//* por si quieren que el tamaño no este achicado*/
 
 #MainImg{
     border-radius: 10px;
@@ -210,6 +214,42 @@ html{
 }
 
 
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.7rem; /* Adjust the width as needed */
+    height: 4.05rem; /* Adjust the height as needed */
+    border: 1.4px solid rgb(227, 230, 234);
+    border-radius: 8px;
+    margin-right: 1.5rem;
+  }
+  
+  .counter-value {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .counter button {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .minus-btn {
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .plus-btn {
+    border-radius: 0 4px 4px 0;
+  }
+  
+
+
 
 .buy-btn{
     font-weight: 400;
@@ -232,11 +272,49 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
-#lineaDetalles{
-    height: 1px; /* Adjust the height of the line as desired */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+.tituloDetalles{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.line2 {
+    position: relative;
+    height: 1.7px; /* Adjust the height of the line as desired */
+    background-color: black; /* Set the color for the side parts */
   }
+  
+  .line2:before,
+  .line2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+  
+  .line2:before {
+    left: 0;
+    width: 30%; /* Adjust the width of the left grey part */
+    background-color: #d5d3d3; /* Set the color for the left grey part */
+  }
+  
+  .line2:after {
+    right: 0;
+    width: 30%; /* Adjust the width of the right grey part */
+    background-color: #d5d3d3; /* Set the color for the right grey part */
+  }
+  
+  .line2 span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30%; /* Adjust the left position of the middle black part */
+    width: 40%; /* Adjust the width of the middle black part */
+    height: 100%;
+    background-color: #000; /* Set the color for the middle black part */
+  }
+  
   
 
 
@@ -319,6 +397,32 @@ html{
     color: var(--negro);
 }
 
+.botonesHero{
+    display: flex;
+    align-self: flex-end;
+}
+
+.botonesHero button{
+    padding: 0.9rem;
+    background-color: white;
+    border: var(--grisIcon) 1px solid;
+    cursor: pointer;
+}
+
+.btnIzq{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btnDer{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.botonesHero i{
+    font-size: 1.3rem;
+    color: var(--negro);
+}
 
 
 
@@ -417,6 +521,9 @@ footer{
 
 /* -----------------MEDIA QUERYS----------------------- */
 @media screen and (max-width: 1200px){
+    #contenedorFotos{
+        height: 80%;
+    }
     .header{
         padding: 2.5rem 10vw;
     }
@@ -439,7 +546,7 @@ footer{
 }
 
 @media(max-width: 1024px){
-    .container{
-        max-height: 80%;
+    #contenedorFotos{
+        height: 80%;
     }
 }
