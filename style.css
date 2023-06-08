@@ -137,7 +137,7 @@ html{
 
 .ubicacion{
     display: flex;
-    justify-content: space-evenly;
+    gap: 0.7rem;
     color: var(--grisPlace);
 }
 
@@ -202,13 +202,52 @@ html{
   }
   
 
-.size h4{
-    font-size: 1.19rem;
-    color: var(--grisOscuro);
+.size{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.5rem;
 }
 
+.size h4{
+    font-size: 1.21rem;
+    color: var(--grisOscuro);
+}
+.size-buttons {
+    display: flex;
+    
+    align-items: center;
+    
+    
+  }
+  
+  .size-btn {
+    flex: 1;
+    max-width: 17%;
+    max-height: 15%;
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1.4px solid rgb(227, 230, 234);
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: lighter;
+    font-size: 1.2rem;
+  }
+  
+  .size-btn.selected{
+    background-color: var(--negro);
+    color: white;
+    border: var(--negro);
+    
+  }
+  
 
 
+
+.addToCart h5{
+    font-size: 1.19rem;
+}
 .addToCart span{
     color: var(--grisOscuro);
 }
@@ -278,7 +317,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1.5rem;
+    
     
 }
 .losDetalles p{
@@ -553,6 +592,12 @@ footer{
     .cardPagos{
         width: 20%;
     }
+    .losDetalles{
+        padding-top: 2.1rem;
+    }
+    .size-buttons{
+        max-width: 95%;
+    }
 }
 
 @media(max-width: 1024px){
@@ -560,6 +605,70 @@ footer{
         height: 80%;
     }
     .ubicacion{
-        font-size: 0.9rem;
+        width: 95%;
+        font-size: 0.8rem;
+        
+        
+    }
+    .titleProducts{
+        
+        width: 90%;
+    }
+    .titleProducts h2{
+        font-size: 1.8rem;
+    }
+
+    .cardProduct{
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+    
+}
+@media(max-width: 780px){
+    .divProducts{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+        
+    }
+    .cardProduct{
+        width: 40%;
+        font-size: 0.8rem;
+    }
+    
+    
+}
+
+@media(max-width: 440px){
+    .mitadHero h2{
+        font-size: 2.3rem;
+        padding-top: 0.3rem;
+    }
+    .mitadHero h3{
+        font-size: 2rem;
+    }
+    .mitadHero h4{
+        font-size: 1.2rem;
+    }
+    .mitadHero h5{
+        font-size: 1.1rem;
+    }
+    .ubicacion{
+        font-size: 0.65rem;
+        gap: 0.4rem;
+    }
+    .titleProducts{
+        
+        width: 85%;
+    }
+    .titleProducts h2{
+        font-size: 1.4rem;
+    }
+    .tituloDetalles{
+        padding-top: 0.3rem;
+    }
+    .tituloDetalles p{
+        padding-top: 1.2rem;
     }
 }
