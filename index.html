@@ -38,14 +38,16 @@
     </header>
 
     <main>
-    
-       
-        <section class="container Product my-2 pt-5">
-            <div class="ubicacion col-lg-5 col-md-6 col-9">Browse product <i class="bi bi-chevron-right"></i> Women <i class="bi bi-chevron-right"></i><span>Jackets</span> </div>
-            <div class="row mt-5 col-lg-11">
-                <div class="col-lg-6 col-md-6 col-12" id="contenedorFotos">
-                    <img class="img-fluid w-100 pb-2" id="MainImg" src="./img/1.jpg" alt="">  
-                    <div class="small-img-group">
+        <section class="Product1 d-flex my-2 pt-5">
+            <div class="ubicacion d-flex col-lg-10 col-md-10 col-10">Browse product <i class="bi bi-chevron-right"></i> Women <i class="bi bi-chevron-right"></i><span>Jackets</span> 
+            </div>
+        </section>
+        <section class="Product d-flex my-2 pt-5" id="hero">
+            
+                <div class="mainHero mt-10 col-lg-10 col-md-11 col-11">
+                    <div class="col-lg-6 col-md-12 col-12" id="contenedorFotos">
+                        <img class="img-fluid w-100 pb-2" id="MainImg" src="./img/1.jpg" alt="">  
+                        <div class="small-img-group">
                         <div class="small-img-col">
                             <img src="./img/1.jpg" width="100%" class="small-img" alt="">
                         </div>
@@ -62,7 +64,7 @@
                 </div>
                 
             
-                <div class=" mitadHero col-lg-5 col-md-6 col-11">
+                <div class=" mitadHero col-lg-6 col-md-12 col-12">
                     <h2 class="weight">Blazer Jacket</h2>
                     <div class="container-estrellas" id="rating">
                         <i class="bi bi-star-fill checked"></i>
@@ -74,7 +76,7 @@
                         
                     </div>
                     <h3 class="weight">$2500</h3>
-                    <div class="line"></div>
+                    <div class="line pt-4"></div>
                     <div class="size">
                         <h4>Available Size</h4>
                         <div class="size-buttons">
@@ -117,54 +119,57 @@
     
     
         <section class="productosRelacionados my-5 pb-5">
-            <div class="titleProducts col-lg-10 col-11">
-                <h2>Productos Relacionados</h2>    
-                <div class="botonesHero">
-                    <button class="btnIzq"><i class="bi bi-chevron-left"></i></button>
-                    <button class="btnDer"><i class="bi bi-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="divProducts col-lg-11 col-md-11 col-11">
-                <div class="cardProduct">
-                    <img src="./img/1.jpg" alt="">
-                    <div class="cardFooter">
-                        <div>
-                            <h3>Vestido otoño</h3>
-                            <h3 class="price">$58</h3>    
-                        </div>  
-                        <i class="bi bi-cart-plus"></i>   
+            
+                <div class="titleProducts col-lg-10 col-11">
+                    <h2>Productos Relacionados</h2>    
+                    <div class="botonesHero">
+                        <button class="scroll-btn prev-btn"><i class="bi bi-chevron-left"></i></button>
+                        <button class="scroll-btn next-btn"><i class="bi bi-chevron-right"></i></button>
                     </div>
                 </div>
-                <div class="cardProduct">
-                    <img src="./img/2.jpg" alt="">
-                    <div class="cardFooter">
-                        <div>
-                            <h3>Remera gris</h3>
-                            <h3 class="price">$87</h3>    
-                        </div>  
-                        <i class="bi bi-cart-plus"></i>   
+                <div class="card-container-wrapper col-lg-10 col-md-11 col-11">
+                    <div class="divProducts">
+                        <div class="cardProduct">
+                            <img src="./img/1.jpg" alt="">
+                            <div class="cardFooter">
+                                <div>
+                                    <h3>Vestido otoño</h3>
+                                    <h3 class="price">$58</h3>    
+                                </div>  
+                                <i class="bi bi-cart-plus"></i>   
+                            </div>
+                        </div>
+                        <div class="cardProduct">
+                            <img src="./img/2.jpg" alt="">
+                            <div class="cardFooter">
+                                <div>
+                                    <h3>Remera gris</h3>
+                                    <h3 class="price">$87</h3>    
+                                </div>  
+                                <i class="bi bi-cart-plus"></i>   
+                            </div>
+                        </div>
+                        <div class="cardProduct">
+                            <img src="./img/3.jpg" alt="">
+                            <div class="cardFooter">
+                                <div>
+                                    <h3>Abrigo cuero</h3>
+                                    <h3 class="price">$32</h3>    
+                                </div>  
+                                <i class="bi bi-cart-plus"></i>   
+                            </div>
+                        </div>
+                        <div class="cardProduct">
+                            <img src="./img/4.jpg" alt="">
+                            <div class="cardFooter">
+                                <div>
+                                    <h3>Abrigo cuero</h3>
+                                    <h3 class="price">$32</h3>    
+                                </div>  
+                                <i class="bi bi-cart-plus"></i>   
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="cardProduct">
-                    <img src="./img/3.jpg" alt="">
-                    <div class="cardFooter">
-                        <div>
-                            <h3>Abrigo cuero</h3>
-                            <h3 class="price">$32</h3>    
-                        </div>  
-                        <i class="bi bi-cart-plus"></i>   
-                    </div>
-                </div>
-                <div class="cardProduct">
-                    <img src="./img/4.jpg" alt="">
-                    <div class="cardFooter">
-                        <div>
-                            <h3>Abrigo cuero</h3>
-                            <h3 class="price">$32</h3>    
-                        </div>  
-                        <i class="bi bi-cart-plus"></i>   
-                    </div>
-                </div>
             </div>
 
         </section>
@@ -175,7 +180,7 @@
     </main>
 
     <footer class="d-flex">
-        <div class="divFooter">
+        <div class="divFooter col-lg-10 col-md-11 col-11">
             <div class="nostraFooter">
                 <h2>NOSTRA</h2>
                 <p>Nos especializamos en proveer productos de alta calidad para tu armario</p>
@@ -213,6 +218,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    
+    
+
+
     <script src="app.js"></script>
 
 </body>

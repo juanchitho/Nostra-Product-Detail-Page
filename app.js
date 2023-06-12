@@ -42,3 +42,42 @@ $(document).ready(function() {
   });
 
 
+/*
+$(document).ready(function() {
+  $('.next-btn').click(function() {
+    $('.cardProduct').animate({ scrollLeft: '+=200' }, 'slow');
+  });
+
+  $('.prev-btn').click(function() {
+    $('.cardProduct').animate({ scrollLeft: '-=200' }, 'slow');
+  });
+});
+
+*/
+
+$(document).ready(function() {
+  var cardContainer = $('.divProducts');
+  var cardWidth = $('.cardProduct').outerWidth(true);
+  var cardsToShow = 2;
+  var scrollAmount = cardWidth * cardsToShow;
+
+    // Adjust card visibility on window resize
+    $(window).on('resize', function() {
+    if ($(window).width() < 780) {
+        cardsToShow = 2;
+        scrollAmount = cardWidth * cardsToShow;
+    } else {
+        cardsToShow = 4;
+        scrollAmount = cardWidth * cardsToShow;
+        cardContainer.css('transform', '');
+    }
+    }).resize();
+
+    $('.next-btn').click(function() {
+    cardContainer.animate({ scrollLeft: '+=' + scrollAmount }, 'slow');
+    });
+
+    $('.prev-btn').click(function() {
+    cardContainer.animate({ scrollLeft: '-=' + scrollAmount }, 'slow');
+    });
+});
