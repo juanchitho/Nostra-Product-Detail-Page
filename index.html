@@ -19,23 +19,51 @@
     </div>
 
 
-    <header class="header d-flex">
+    <header class="header">
+        <div class="menu-toggle">
+            <div ><i class="bi bi-list hamburger"></i></div>
+        </div>
         <h2>NOSTRA</h2>
-        <nav>
-            <a href="#">Shop <i class="bi bi-chevron-down"></i></a>
-            <a href="#">Más buscados</a>
-            <a href="#">Nuevos productos</a>
-            <a href="#brands">Marcas</a>
+        <nav class="nav" id="nav">
+            
+        <ul class="menu">
+           
+            <div>
+                <li class="dropdown">
+                     <a href="#">Shop <i class="bi bi-chevron-down"></i></a>
+                     <ul class="dropdown-menu">
+                       <li><a href="#">Hombres</a></li>
+                       <li><a href="#">Mujeres</a></li>
+                       <li><a href="#">Niños</a></li>
+                     </ul>
+                </li>
+            </div> 
+            <li><a href="#">Más buscados</a></li> 
+            <li><a href="#">Nuevos productos</a></li>
+            <li><a href="#brands">Marcas</a></li>
+          </ul>
         </nav>
         <div class="navDer">
-            <div class = divInput>
-                <a href="#"><i class="bi bi-search iconSearch"></i></a>
-                <input class="inputSearch" type="search" id="buscar" placeholder="Buscar">
+
+
+            <div class="iconocarrito">
+                
+                <div class="divBtnLupa">
+                    <div class="divLupa">
+                        <i class="bi bi-search icon"></i>
+                    </div>
+                    <input type="text" placeholder="buscar" required>
+                </div>
+            
+                <i class="bi bi-cart2 carritocompra"></i>
+                <i class="bi bi-person persona"></i>
+
             </div>
-            <i class="bi bi-cart2"></i>
-            <i class="bi bi-person"></i>
         </div>
     </header>
+
+
+
 
     <main>
         <section class="Product1 d-flex my-2 pt-5">
@@ -185,19 +213,19 @@
                 <h2>NOSTRA</h2>
                 <p>Nos especializamos en proveer productos de alta calidad para tu armario</p>
             </div>
-            <div class="footerCard">
+            <div class="footerCard shop">
                 <h3>SHOP</h3>
                 <a href="">Colecciones</a>
                 <a href="">Edición invierno</a>
                 <a href="">Descuentos</a>
             </div>
-            <div class="footerCard">
+            <div class="footerCard compania">
                 <h3>COMPANIA</h3>
                 <a href="">Sobre nosotros</a>
                 <a href="">Contacto</a>
                 <a href="">Afiliados</a>    
             </div>
-            <div class="footerCard">
+            <div class="footerCard soporte">
                 <h3>SOPORTE</h3>
                 <a href="">FAQs</a>
                 <a href="">Política de cookies</a>
