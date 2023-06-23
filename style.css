@@ -231,7 +231,7 @@ align-items: center;
 
 .small-img-group{
     display: flex;
-    justify-content: space-between;
+    gap: 0.7rem;
     
 
 }
@@ -770,6 +770,8 @@ footer{
     
       .menu.active {
         display: block;
+        z-index: 1;
+    
       }
     
       .menu a {
@@ -780,9 +782,9 @@ footer{
       }
       .dropdown-menu {
         display: none;
+        position: absolute;
+        
         background-color: transparent;
-        margin-left: 13rem;
-        margin-top: -60px;
         padding: 0px;
       }
       .dropdown-menu li{
@@ -798,6 +800,7 @@ footer{
       .dropdown.active .dropdown-menu {
         display: block;
         width: 13rem;
+        position: absolute;
         
       }
     .divInput{
