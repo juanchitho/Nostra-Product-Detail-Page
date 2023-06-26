@@ -7,7 +7,9 @@ function selectSize(button) {
   
     // Add the "selected" class to the clicked button
     button.classList.add("selected");
-  }
+}
+
+/*
 var MainImg = document.getElementById('MainImg');
 var smallImg = document.getElementsByClassName('small-img');
 
@@ -23,7 +25,7 @@ smallImg[2].onclick = function(){
 smallImg[3].onclick = function(){
     MainImg.src = smallImg[3].src;
 } 
-
+*/
 
 $(document).ready(function() {
     var counterValue = 1;

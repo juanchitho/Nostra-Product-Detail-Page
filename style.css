@@ -243,7 +243,7 @@ align-items: center;
     border-radius: 10px;
     overflow: hidden;
     perspective: 1px;
-    max-height: 87%;
+    max-height: 98%;
 }
 
 #contenedorFotos{
@@ -406,7 +406,88 @@ align-items: center;
     cursor: pointer;
     height: 4rem;
 }
+/*------- test slider------*/
 
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    body {
+      background: #000;
+      color: #000;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 80%;
+      width: 100%;
+    }
+
+    .mySwiper {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 
 
@@ -975,6 +1056,9 @@ footer{
     .cardProduct{
         max-width: 90%;
         font-size: 1.2rem;
+    }
+    .small-img{
+        margin-bottom: 0.5rem;
     }
     
 }
