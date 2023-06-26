@@ -713,9 +713,16 @@ footer{
         font-size: 1rem;
         outline: none;
         width: 200px;
+    }
+    .Product1 div{
+        padding: 1rem;
     } 
 }
-@media(max-width: 1710px){
+@media(max-width: 1510px){
+
+    .Product1 div{
+        padding-left: 0.9rem;
+    } 
     .mitadHero h2{
         font-size: 3.0rem;
         padding-top: 0.3rem;
@@ -774,47 +781,44 @@ footer{
     
       }
     
-      .menu a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 16px;
-        margin: 10px 0;
-      }
-      .dropdown-menu {
-        display: none;
-        position: absolute;
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
         
-        background-color: transparent;
-        padding: 0px;
-      }
-      .dropdown-menu li{
-        background-color: #000000;
-        border-radius: 15px ;
-        height: 39px;
-        color: #ffffff;
+    background-color: transparent;
+    padding: 0px;
+}
+.dropdown-menu li{
+    background-color: #000000;
+    border-radius: 15px ;
+    height: 39px;
+    color: #ffffff;
         
-      }
-      .dropdown-menu li a{
-        font-size: 16px;
-      }
-      .dropdown.active .dropdown-menu {
-        display: block;
-        width: 13rem;
-        position: absolute;
+}
+.dropdown-menu li a{
+    font-size: 16px;
+}
+.dropdown.active .dropdown-menu {
+    display: block;
+    width: 13rem;
+    position: absolute;
         
-      }
-    .divInput{
-        display: none;
-    }
-    .navDer{
-        display: flex;
-
-        width: 25%;
-        height: 30px;
-       
-        
-        justify-content: space-between;
-    }
+}
+.divInput{
+    display: none;
+}
+.navDer{
+    display: flex;
+    width: 25%;
+    height: 30px;
+    justify-content: space-between;
+}
     
  .divBtnLupa{
     display: flex;
@@ -911,7 +915,7 @@ footer{
         padding-top: 2.1rem;
     }
     .size-buttons{
-        max-width: 95%;
+        gap: 5px;
     }
 }
 @media(width<=1100px){
@@ -1221,22 +1225,28 @@ footer{
 
 
 @media(max-width: 440px){
+    #hero{
+        padding-top: 0.5rem !important;
+    }
     .mitadHero h2{
-        font-size: 2.3rem;
+        font-size: 2rem;
         padding-top: 0.3rem;
     }
     .mitadHero h3{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .mitadHero h4{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .mitadHero h5{
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
     .ubicacion{
-        font-size: 0.65rem;
+        font-size: 0.6rem;
         gap: 0.4rem;
+    }
+    #lineaPrecio{
+        padding-top: 0rem !important;
     }
     .titleProducts{
         
@@ -1265,11 +1275,12 @@ footer{
         flex: auto;
     }
     .cardProduct i{
-        font-size: 1.1rem;
-        width: 40%;
+        font-size: 0.8rem;
+        width: 90%;
     
     }
     .cardProduct img{
         height: 8rem;
     }
+    
 }
