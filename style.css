@@ -1282,5 +1282,11 @@ footer{
     .cardProduct img{
         height: 8rem;
     }
-    
+    .carritocompra{
+        margin-left: 4rem;
+    }
+    .iconocarrito{
+        
+        margin-left: 2.5rem;
+    }
 }
