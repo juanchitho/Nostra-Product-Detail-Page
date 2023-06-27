@@ -193,6 +193,7 @@ align-items: center;
 
 
 /* ----------------HERO------------------------ */
+
 .Product1{
     justify-content: center ;
     
@@ -207,6 +208,7 @@ align-items: center;
     display: flex;
     
     justify-content:start;
+    position: sticky;
     
     
 }
@@ -870,10 +872,15 @@ footer{
 }
 .dropdown-menu {
     display: none;
-    position: absolute;
-        
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
     background-color: transparent;
-    padding: 0px;
+    position: absolute;
+    left: 17%;
+    top: 10%;
+    height: 12rem;
+    width: 14rem;
 }
 .dropdown-menu li{
     background-color: #000000;
@@ -1198,7 +1205,7 @@ footer{
     
 @media(width<=684px){
     .menu{
-        margin-top: 100px;
+        margin-top: 62px;
     }
 }
 @media (width<=600px){
