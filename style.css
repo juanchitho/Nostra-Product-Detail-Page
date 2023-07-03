@@ -70,6 +70,9 @@ html{
     align-items: center;
     padding: 2.5rem 18vw;
 }
+.header h2{
+    font-size:larger;
+}
 
 nav{
     display: flex;
@@ -90,6 +93,9 @@ nav{
     color: #000000;
     text-decoration: none;
     padding: 10px;
+  }
+  nav a:hover{
+    color: var(--grisOscuro);
   }
   
   .dropdown-menu {
@@ -153,6 +159,7 @@ nav{
     display: none;
     background-color: #ffffff;
     padding: 0px;
+    border: none !important;
   }
   
   .dropdown.active .dropdown-menu {
@@ -581,7 +588,7 @@ align-items: center;
 .divProducts{
     display: inline-flex;
     
-    gap: 25px;
+    gap: 17px; /*gap de 17px para que se vean bien los 8 divs*/
     max-width: fit-content;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -881,6 +888,7 @@ footer{
     top: 10%;
     height: 12rem;
     width: 14rem;
+    
 }
 .dropdown-menu li{
     background-color: #000000;
